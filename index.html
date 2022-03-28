@@ -67,18 +67,90 @@
           </button>
           <div class="carousel__track-container">
               <ul class="carousel__track">
-                  <li class="carousel__slide current-slide">
-                      <img class="carousel__image" src="images/manti.jpg" alt="Manti, Utah LDS Temple">
-                      <div class="text">Manti, UT Temple</div>
-                  </li>
-                  <li class="carousel__slide current-slide">
-                      <img class="carousel__image" src="images/draper.jpg" alt="Draper, Utah LDS Temple">
-                      <div class="text">Draper, UT Temple</div>
-                  </li>
-                  <li class="carousel__slide current-slide">
-                      <img class="carousel__image" src="images/salt-lake.jpg" alt="Salt Lake, Utah LDS Temple">
-                      <div class="text">Salt Lake, UT Temple</div>
-                  </li>
+                <li class="carousel__slide current-slide">
+                  <picture>
+                    <source
+                      srcset="images/stgeorge-medium.webp" 
+                      media="(min-width: 512px) and (max-width: 1023px)"
+                    />
+                    <source
+                      srcset="images/stgeorge-large.webp"
+                      media="(min-width: 1024px)"
+                    />
+                    <img
+                      class="carousel__image"
+                      src="images/stgeorge-small.webp"
+                      media="(min-width: 300px) and (max-width: 511px)"
+                      alt="St. George Utah Temple"
+                    />
+                  </picture>
+                    <div class="text">
+                      <p>St. George Utah Temple</p>
+                    </div>
+                </li>
+                <li class="carousel__slide current-slide">
+                  <picture>
+                    <source
+                      srcset="images/buenos-aires-medium.webp" 
+                      media="(min-width: 512px) and (max-width: 1023px)"
+                    />
+                    <source
+                      srcset="images/buenos-aires-large.webp"
+                      media="(min-width: 1024px)"
+                    />
+                    <img
+                      class="carousel__image"
+                      src="images/buenos-aires-small.webp"
+                      media="(min-width: 300px) and (max-width: 511px)"
+                      alt="Buenos Aires Argentina Temple"
+                    />
+                  </picture>                    
+                    <div class="text">
+                      <p>Buenos Aires Argentina Temple</p>
+                    </div>
+                </li>
+                <li class="carousel__slide current-slide">
+                  <picture>
+                    <source
+                      srcset="images/bismarck-medium.webp" 
+                      media="(min-width: 512px) and (max-width: 1023px)"
+                    />
+                    <source
+                      srcset="images/bismarck-large.webp"
+                      media="(min-width: 1024px)"
+                    />
+                    <img
+                      class="carousel__image"
+                      src="images/bismarck-small.webp"
+                      media="(min-width: 300px) and (max-width: 511px)"
+                      alt="Bismarck North Dakota Temple"
+                    />
+                  </picture>                    
+                    <div class="text">
+                      <p>Bismarck North Dakota Temple</p>
+                    </div>
+                </li>
+                <li class="carousel__slide current-slide">
+                  <picture>
+                    <source
+                      srcset="images/provo-medium.webp" 
+                      media="(min-width: 512px) and (max-width: 1023px)"
+                    />
+                    <source
+                      srcset="images/provo-large.webp"
+                      media="(min-width: 1024px)"
+                    />
+                    <img
+                      class="carousel__image"
+                      src="images/provo-small.webp"
+                      media="(min-width: 300px) and (max-width: 511px)"
+                      alt="Provo Utah Temple"
+                    />
+                  </picture>                  
+                    <div class="text">
+                      <p>Provo Utah Temple</p>
+                    </div>
+                </li>
               </ul>
           </div>
           <button class="carousel__button carousel__button--right">
@@ -86,6 +158,7 @@
           </button>
           <div class="carousel__nav">
               <button class="carousel__indicator current-slide"></button>
+              <button class="carousel__indicator"></button>
               <button class="carousel__indicator"></button>
               <button class="carousel__indicator"></button>
           </div>

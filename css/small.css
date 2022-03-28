@@ -163,39 +163,26 @@ nav ul.open {
 /* -----------------Slide Show-------------- */
 
 #carousel-container {
-  max-width: 700px;
+  max-width: 511px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
 
-.text {
-  color: #f2f2f2;
-  font-family: var(--heading-font);
-  font-size: 15px;
-  font-weight: bold;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  background: black;
-}
-
 .carousel {
   position: relative;
-  height: 320px;
-  width: 480px;
+  height: 225px;
+  width: 300px;
   margin: 0 auto;
 }
 
 .carousel__image {
   width: 100%;
-  
 }
 
 .carousel__track-container {
   background: lightgreen;
   height: 100%;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -220,17 +207,18 @@ nav ul.open {
   position: absolute;
   top: 50%;
   transform: translate(-50%);
-  background: transparent;
+  background-color: black;
   border: 0;
   cursor: pointer;
 }
 
 .carousel__button--left {
-  left: -40px;
+  left: 25px;
+  z-index: 9999;
 }
 
 .carousel__button--right {
-  right: -95px;
+  right: -27px;
 }
 
 .carousel__button img {
@@ -259,6 +247,19 @@ nav ul.open {
 
 .is-hidden { 
   display: none;
+}
+
+.text {
+  color: #f2f2f2;
+  font-family: var(--special-font);
+  font-size: 15px;
+  /* font-weight: bold; */
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background: black;
 }
 
 /* -----------------Footer----------------- */
