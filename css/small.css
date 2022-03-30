@@ -372,6 +372,11 @@ nav ul.open {
   width: 80%;
 }
 
+/* -----------------------Temples Page------------------------- */
+main {
+  color: white;
+}
+
 /* -----------------Footer----------------- */
 footer {
   display: flex;

@@ -1,9 +1,9 @@
 
 
-const requestURL = "https://pr0gramama.github.io/wdd230/chamber/data/data.json"
+const requestURL = "https://pr0gramama.github.io/templeinnandsuites/data/temples.json"
 
 const cards = document.querySelector(".temple-cards");
-const memlist = document.querySelector(".temple-list");
+const tempList = document.querySelector(".temple-list");
 
 fetch(requestURL)
 .then(function (response) {
@@ -11,86 +11,94 @@ fetch(requestURL)
 })
 .then(function (jsonObject) {
     console.table(jsonObject);
-    let members = jsonObject["members"];
-    members.forEach(displayMembers);
+    let temples = jsonObject["temples"];
+    temples.forEach(displayTemples);
 
     document.getElementById("grid-button").addEventListener("click", () => {
-        members.forEach(displayMembersList)
+        temples.forEach(displayTemplesList)
         cards.innerHTML = ""
     });
     
     document.getElementById("list-button").addEventListener("click", () => {
-        members.forEach(displayMembers)
-        memlist.innerHTML = ""
+        temples.forEach(displayTemples)
+        tempList.innerHTML = ""
         
     });
 
     if(window.innerWidth>512&&window.innerWidth<1024) {
-        members.forEach(displayMembersList)
+        temples.forEach(displayTemplesList)
         cards.innerHTML = ""
     }
 })
 
-function displayMembers(member) {
+function displayTemples(temple) {
     let card = document.createElement('section');
     
     //h2 name
     let name = document.createElement('h2');
-    name.textContent = `${member.name}`;
+    name.textContent = `${temple.name}`;
     card.appendChild(name);
     
     //p address
     let address = document.createElement('p');
-    address.textContent = `${member.address}`;
+    address.textContent = `${temple.address}`;
     card.appendChild(address);
     
     //p phone
     let phone = document.createElement('p');
-    phone.textContent = `${member.phone}`;
+    phone.textContent = `${temple.phone}`;
     card.appendChild(phone);
     
     //website
-    let website = document.createElement("p");
-    website.textContent = `${member.website}`;
-    card.appendChild(website);
+    let services = document.createElement("p");
+    services.textContent = `Services Available: ${temple.services}`;
+    card.appendChild(services);
+
+    let history = document.createElement("p");
+    history.textContent = `${temple.history}`;
+    card.appendChild(history);
+
+    let schedules = document.createElement("p");
+    schedules.textContent = `${temple.schedules}`;
+    card.appendChild(schedules);
 
     // img
-    let logo = document.createElement('img');
-    logo.setAttribute("src", member.logo);
-    logo.setAttribute("alt", `${member.name} Logo`);
-    logo.setAttribute("loading", "lazy");
-    card.appendChild(logo);
+    // let logo = document.createElement('img');
+    // logo.setAttribute("src", temple.logo);
+    // logo.setAttribute("alt", `${temple.name} Logo`);
+    // logo.setAttribute("loading", "lazy");
+    // card.appendChild(logo);
     
     cards.appendChild(card);
 }
 
-function removedisplayMembers () {
+function removedisplayTemples () {
     let card = document.createElement("section");
     cards.prepend(card);
 }
 
-function displayMembersList(memberList) {
-    let mlist = document.createElement("table");
+function displayTemplesList(templeList) {
+    let tlist = document.createElement("table");
 
     //td name
     let name = document.createElement("td");
-    name.textContent = `${memberList.name}`;
-    mlist.appendChild(name);
+    name.textContent = `${templeList.name}`;
+    tlist.appendChild(name);
 
     //td address
     let address = document.createElement("td");
-    address.textContent = `${memberList.address}`;
-    mlist.appendChild(address);
+    address.textContent = `${templeList.address}`;
+    tlist.appendChild(address);
 
     //td phone
     let phone = document.createElement("td");
-    phone.textContent = `${memberList.phone}`;
-    mlist.appendChild(phone);
+    phone.textContent = `${templeList.phone}`;
+    tlist.appendChild(phone);
 
     //td website
     let website = document.createElement("td");
-    website.textContent = `${memberList.website}`;
-    mlist.appendChild(website);
+    services.textContent = `${templeList.services}`;
+    tlist.appendChild(services);
 
-    memlist.appendChild(mlist);
+    tempList.appendChild(tlist);
 }
