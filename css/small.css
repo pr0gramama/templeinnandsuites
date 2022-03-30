@@ -405,7 +405,7 @@ footer {
 
 #footer-extras {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr .35fr;
   grid-template-rows: 1fr 1fr;
   grid-row-gap: 8px;
   background-color: rgba(11, 70, 101, 0.4);
