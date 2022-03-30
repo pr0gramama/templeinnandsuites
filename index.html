@@ -29,7 +29,7 @@
             </a>
             <div class="title-name">
               <h1>Temple</h1>
-              <p>Inn & Suites</p>
+              <h2>Inn & Suites</h2>
             </div>
         <div id="social-media">
           <a href="https://www.facebook.com" target="_blank" class="facebook"
@@ -80,7 +80,7 @@
                     <img
                       class="carousel__image"
                       src="images/stgeorge-small.webp"
-                      media="(min-width: 300px) and (max-width: 511px)"
+                      
                       alt="St. George Utah Temple"
                     />
                   </picture>
@@ -101,7 +101,7 @@
                     <img
                       class="carousel__image"
                       src="images/buenos-aires-small.webp"
-                      media="(min-width: 300px) and (max-width: 511px)"
+                      
                       alt="Buenos Aires Argentina Temple"
                     />
                   </picture>                    
@@ -122,7 +122,7 @@
                     <img
                       class="carousel__image"
                       src="images/bismarck-small.webp"
-                      media="(min-width: 300px) and (max-width: 511px)"
+                      
                       alt="Bismarck North Dakota Temple"
                     />
                   </picture>                    
@@ -143,7 +143,7 @@
                     <img
                       class="carousel__image"
                       src="images/provo-small.webp"
-                      media="(min-width: 300px) and (max-width: 511px)"
+                      
                       alt="Provo Utah Temple"
                     />
                   </picture>                  
@@ -157,18 +157,83 @@
               <img src="images/rightarrow-gray.svg" alt="right arrow button">
           </button>
           <div class="carousel__nav">
-              <button class="carousel__indicator current-slide"></button>
-              <button class="carousel__indicator"></button>
-              <button class="carousel__indicator"></button>
-              <button class="carousel__indicator"></button>
+              <button class="carousel__indicator current-slide">1</button>
+              <button class="carousel__indicator">2</button>
+              <button class="carousel__indicator">3</button>
+              <button class="carousel__indicator">4</button>
           </div>
         </div>
       </div>
-
+      <div id="main-container">
+        <div id="reservations">
+          <h2>Customer Testimonials</h2>
+          <p class="review1">"I am so glad we found Temple Inn & Suites online.  Our youth temple trip
+            was made so much easier because of their friendly, knowledgeable staff." ~ Dakota Robinson,
+            Pierre, SD</p>
+          <div class="review2" hidden>
+            <p>"When my husband and I wanted to do family history research and attend the
+              temple to complete our ancestor's ordinances, Temple Inn & Suites made it so we
+              could simply concentrate on the work.  We highly recommend them!" ~ Caroline Abrams,
+              Edmonton, AB, Canada</p>
+          </div>
+          <div class="review3" hidden>
+            <p>"My husband and I can't thank the staff at Temple Inn & Suites enough for going above and beyond
+              to help my grandparents while they attended our sealing.  My grandfather is in a wheelchair and they made every
+              effort to make everything accessible for him. ~ Dana Pellegrino, Fountain Green, UT"</p>
+          </div>
+          <div><button onclick="window.location.href='reservations.html'">Make a Reservation</button></div>
+        </div>
+        <div id="templeis-info">
+          <h2>Contact Information</h2>
+          <h3>Temple Inn & Suites</h3>
+          <p>Headquarters:</p>
+          <p>4800 Montgomery Ln #300</p>
+          <p>Bethesda, MD  20814</p>
+          <p>Email: <a target="_blank" href="https://mail.google.com/">templeinns@tis.com</a></p>
+          <button onclick="window.location.href='contact.html'">Contact Us</button>
+        </div>
+        <div class="weather">
+          <h3 class="weather-title">Weather</h3>
+            <span id="icon-src"></span>
+            <figure>
+              <img src="" alt="" id="weathericon"/>
+              <figcaption></figcaption>
+            </figure>
+            <div>
+              <p>
+                <strong>Current: </strong><span id="current-temp"></span> &deg;F
+              </p>
+        
+              <p>
+                <strong>humidity: </strong><span id="humidity"></span>%
+              </p>
+              <p>
+                <strong>Weather Alert: </strong><span id="alerts"></span>
+              </p>
+            </div>
+        </div>
+        <div id="spotlight">
+          <picture>
+            <source
+              srcset="images/buenos-aires-medium.webp" 
+              media="(min-width: 512px) and (max-width: 1023px)"
+            />
+            <img
+              src="images/buenos-aires-small.webp"
+              alt="Buenos Aires Argentina Temple"
+            />
+          </picture>
+          <h4>Buenos Aires Argentina Temple</h4>
+          <p>Dedicated 9 September 2012, the Buenos Aires Temple is open in phase 3
+            operations: open for all ordinances with restrictions.  Clothing rental and patron
+            housing are available and there is a distribution center nearby.
+          </p>
+        </div>
+      </div>
     </main>
     <footer>
       <div id="logo-footer">
-        <a href="../temple/index.html">
+        <a href="index.html">
           <picture id="small-logo">
             <img
               src="images/temple-logo.webp"
@@ -176,23 +241,24 @@
               width="100"
             />
           </picture>
-        </div>
         </a>
-        <div class="footer-title">
-          <p class="footer-name">Temple Inn & Suites</p>
-          <p class="footer-address">4800 Montgomery Ln #300</p>
-          <p class="footer-address">Bethesda, MD  20814</p>
+      </div>
+      <div class="footer-title">
+        <p class="footer-name">Temple Inn & Suites</p>
+        <p class="footer-address">4800 Montgomery Ln #300</p>
+        <p class="footer-address">Bethesda, MD  20814</p>
+      </div>
+      <div id="footer-extras">
+        <p><a class="location" target="_blank" href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977258,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">🏳️ Location Map</a></p>
+        <div id="lastModified"></div>
+        <p>⛅ api by <a class="api-credit" target="_blank" href="https://openweathermap.org/">OpenWeatherMap</a></p> 
+        <div class="copywrite-footer">
+          &copy; <span id="currentyear"></span> Temple Inn & Suites
         </div>
-        <div id="footer-extras">
-          <p><a class="location" target="_blank" href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977258,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">🏳️ Location Map</a></p>
-          <div id="lastModified"></div>
-          <p>⛅ api by <a class="api-credit" target="_blank" href="https://openweathermap.org/">OpenWeatherMap</a></p> 
-          <div class="copywrite-footer">
-            &copy; <span id="currentyear"></span> Temple Inn & Suites
-          </div>
-        </div>
+      </div>
     </footer>
     <script src="js/script.js"></script>
     <script src="js/slideshow.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>

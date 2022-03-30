@@ -74,11 +74,11 @@ header h1 {
   margin-left: -4px;
 }
 
-header p {
+header h2 {
   font-family: var(--paragraph-font);
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: 100;
-  color: var(--primary-color);
+  color: black;
   margin-top: -7px;
 }
 
@@ -167,7 +167,7 @@ nav ul.open {
 /* -----------------Slide Show-------------- */
 
 #carousel-container {
-  max-width: 511px;
+  max-width: 512px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -184,7 +184,6 @@ nav ul.open {
 }
 
 .carousel__track-container {
-  background: lightgreen;
   height: 100%;
   width: 100%;
   position: relative;
@@ -214,6 +213,10 @@ nav ul.open {
   background-color: black;
   border: 0;
   cursor: pointer;
+}
+
+.carousel__button:hover {
+  background-color: var(--primary-color);
 }
 
 .carousel__button--left {
@@ -256,14 +259,117 @@ nav ul.open {
 .text {
   color: #f2f2f2;
   font-family: var(--special-font);
-  font-size: 15px;
-  /* font-weight: bold; */
-  padding: 8px 12px;
+  font-size: 26px;
+  padding: 12px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
-  background: black;
+  background-color: black;
+}
+
+/* ------------------Home Page, continued */
+#main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.75fr 0.75fr;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  margin-right: 30px;
+  margin-left: 30px;
+  
+}
+
+#reservations, #templeis-info, .weather, #spotlight {
+  text-align: center;
+  background-color: white;
+}
+
+#reservations, #templeis-info, .weather, #spotlight h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+}
+
+#reservations, #templeis-info, .weather, #spotlight p {
+  font-family: var(--paragraph-font);
+}
+
+#reservations {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: white;
+  padding: 1em;
+}
+
+#reservations p {
+  font-family: var(--paragraph-font);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+#reservations button {
+  font-family: var(--paragraph-font);
+  font-size: 16pt;
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 1em;
+  margin-top: 20px;
+}
+
+#reservations button:hover {
+  background-color: #9ab05e;
+  cursor: pointer;
+}
+
+#templeis-info {
+  grid-area: 3 / 2 / 4 / 4;
+  background-color: white;
+  padding: 1em;
+  border: 10px solid var(--accent1-color);
+}
+
+#templeis-info button {
+  font-family: var(--heading-font);
+  font-size: 12pt;
+  font-weight: bold;
+  background-color: var(--accent3-color);
+  color: white;
+  border: none;
+  padding: 1em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#templeis-info button:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+#templeis-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#templeis-info a:hover {
+  color: var(--accent3-color);
+}
+
+.weather {
+  grid-area: 3 / 1 / 4 / 2;
+  border: 15px solid var(--accent3-color);
+}
+
+.weather img {
+  width: 100%;
+}
+
+#spotlight {
+  grid-area: 2 / 1 / 3 / 4;
+  padding: 1em;
+}
+
+#spotlight img {
+  width: 80%;
 }
 
 /* -----------------Footer----------------- */
