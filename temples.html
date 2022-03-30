@@ -16,21 +16,22 @@
     <title>Temple Inn & Suites</title>
 </head>
 <body>
-    <header>
-        <section id="logo-nav">
-            <a href="../temple/index.html">
-              <picture id="logo">
-                <img
-                  src="images/temple-logo.webp"
-                  alt="Temple Inn & Suites Logo"
-                  width="100"
-                />
-              </picture>
-            </a>
-            <div class="title-name">
-              <h1>Temple</h1>
-              <p>Inn & Suites</p>
-            </div>
+  <header>
+    <section id="logo-nav">
+      <a href="index.html">
+        <picture id="logo">
+          <img
+            src="images/temple-logo.webp"
+            alt="Temple Inn & Suites Logo"
+            width="100"
+          />
+        </picture>
+      </a>
+      <div class="title-name">
+        <h1>Temple</h1>
+        <h2>Inn & Suites</h2>
+      </div>
+      <div id="social-nav">
         <div id="social-media">
           <a href="https://www.facebook.com" target="_blank" class="facebook"
             ><img src="images/facebook-logo.png" alt="facebook logo"
@@ -57,14 +58,33 @@
             </li>
           </ul>
         </nav>
-        </section>
-    </header>
-    <main>
-
-    </main>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="temples">
+      <div id="temples-title">
+          <h1>Member Directory</h1>
+      </div>
+      <div id="view">
+          <button id="list-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+              <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+            </svg>
+          </button>
+          <button id="grid-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+              <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+              <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+            </svg>
+          </button>
+      </div>
+          <div class="temple-cards"></div>
+          <div class="temple-list"></div>
+    </section>
     <footer>
       <div id="logo-footer">
-        <a href="../temple/index.html">
+        <a href="index.html">
           <picture id="small-logo">
             <img
               src="images/temple-logo.webp"
