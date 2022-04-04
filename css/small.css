@@ -368,6 +368,35 @@ nav ul.open {
   width: 80%;
 }
 
+#forecast {
+  font-family: var(--paragraph-font);
+  background-color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: 5px solid var(--secondary-color);
+}
+
+#forecast h5 {
+  font-size: 18pt;
+}
+
+.three-forecast {
+  display: grid;
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
+
+.three-forecast section {
+  display: flex;
+  border: 4px solid #9ab05e;
+  border-radius: 12px;
+  margin: 4px;
+  align-items: center;
+  padding: .5em;
+}
 /* -----------------------Temples Page------------------------- */
 #temples {
   background-color: white;
@@ -376,6 +405,13 @@ nav ul.open {
   font-family: var(--paragraph-font);
   margin-right: 35px;
   margin-left: 35px;
+  max-width: 1200px;
+  min-width: 375px;
+  padding-top: 1em;
+}
+
+#temples img {
+  width: 100%;
 }
 
 #temples-title {
@@ -385,6 +421,10 @@ nav ul.open {
   font-style: italic;
   font-size: 16pt;
   margin-bottom: 10px;
+}
+
+.temple-cards section h2 {
+  font-style: italic;
 }
 
 #view {
@@ -614,6 +654,13 @@ form label.top input:required {
   background-color: #780000;
 }
 
+/* -------------------Contact Us Page --------------------- */
+.contact-grid {
+  background-color: white;
+  padding: 1em;
+  margin-left: 35px;
+  margin-right: 35px;
+}
 
 /* -----------------Footer----------------- */
 footer {
