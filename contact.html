@@ -1,68 +1,131 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Temple Inn & Suites</title>
-</head>
-<body>
-  <header>
-    <section id="logo-nav">
-      <a href="index.html">
-        <picture id="logo">
-          <img
-            src="images/temple-logo.webp"
-            alt="Temple Inn & Suites Logo"
-            width="100"
-          />
-        </picture>
-      </a>
-      <div class="title-name">
-        <h1>Temple</h1>
-        <h2>Inn & Suites</h2>
-      </div>
-      <div id="social-nav">
-        <div id="social-media">
-          <a href="https://www.facebook.com" target="_blank" class="facebook"
-            ><img src="images/facebook-logo.png" alt="facebook logo"
-          /></a>
-          <a href="https://www.linkedin.com" target="_blank" class="linkedin"
-            ><img src="images/linkedin-logo.png" alt="linkedin logo"
-          /></a>
+  </head>
+  <body>
+    <header>
+      <section id="logo-nav">
+        <a href="index.html">
+          <picture id="logo">
+            <img
+              src="images/temple-logo.webp"
+              alt="Temple Inn & Suites Logo"
+              width="100"
+            />
+          </picture>
+        </a>
+        <div class="title-name">
+          <h1>Temple</h1>
+          <h2>Inn & Suites</h2>
         </div>
-        <nav id="nav">
-          <button id="hamburgerBtn"><span>&#9776;</span><span>&#9932;</span></button>
-          <ul id="primaryNav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li class="active">
-              <a href="temples.html">Temples</a>
-            </li>
-            <li class="active">
-              <a href="reservations.html">Reservations</a>
-            </li>
-            <li class="active">
-              <a href="services.html">Services</a>
-            </li>
-            <li class="active">
-              <a href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-  </header>
+        <div id="social-nav">
+          <div id="social-media">
+            <a href="https://www.facebook.com" target="_blank" class="facebook"
+              ><img src="images/facebook-logo.png" alt="facebook logo"
+            /></a>
+            <a href="https://www.linkedin.com" target="_blank" class="linkedin"
+              ><img src="images/linkedin-logo.png" alt="linkedin logo"
+            /></a>
+          </div>
+          <nav id="nav">
+            <button id="hamburgerBtn">
+              <span>&#9776;</span><span>&#9932;</span>
+            </button>
+            <ul id="primaryNav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active">
+                <a href="temples.html">Temples</a>
+              </li>
+              <li class="active">
+                <a href="reservations.html">Reservations</a>
+              </li>
+              <li class="active">
+                <a href="services.html">Services</a>
+              </li>
+              <li class="active">
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
     <main>
-
+      <div class="contact-grid">
+        <div class="help-grid">
+          <h2 class="help-headline">
+            Contact us!
+          </h2>
+          <p class="help-paragraph">
+            Our staff's number one goal is to ensure your satisfaction.  Please use this form to submit your 
+            comments or questions.  We generally respond within 1 hour of your submission.
+          </p>
+          <div class="help-image">
+            <img
+              src="images/temple-logo.webp"
+              alt="Pinnacle Chamber Logo" 
+              loading="lazy" 
+            />
+          </div>
+        </div>
+        <form class="name-form" action="contact-submit.html" method="GET">
+          <label class="cont-sbmt">Name:
+            <input
+              type="text"
+              name="name"
+              id="contact-name"
+              required
+            />
+          </label>
+          <label class="cont-sbmt">Email:
+            <input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              id="contact-email"
+              required
+            />
+          </label>
+          <label class="cont-sbmt">
+            Your question/comment:
+            <textarea
+              id="contact-question"
+              name="question"
+              required
+            ></textarea>
+          </label>
+          <div id="contact-submit">
+            <button type="submit" name="submit">
+              Contact Us
+            </button>
+          </div>
+          <div class="chamber-email">
+            <p>
+              You can also email us at: 
+              <a href= "templeinns@tis.com">templeinns@tis.com</a>
+            </p>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
       <div id="logo-footer">
@@ -74,22 +137,37 @@
               width="100"
             />
           </picture>
-        </div>
         </a>
-        <div class="footer-title">
-          <p class="footer-name">Temple Inn & Suites</p>
-          <p class="footer-address">4800 Montgomery Ln #300</p>
-          <p class="footer-address">Bethesda, MD  20814</p>
+      </div>
+      <div class="footer-title">
+        <p class="footer-name">Temple Inn & Suites</p>
+        <p class="footer-address">4800 Montgomery Ln #300</p>
+        <p class="footer-address">Bethesda, MD 20814</p>
+      </div>
+      <div id="footer-extras">
+        <p>
+          <a
+            class="location"
+            target="_blank"
+            href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977258,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318"
+            >🏳️ Location Map</a
+          >
+        </p>
+        <div id="lastModified"></div>
+        <p>
+          ⛅ api by
+          <a
+            class="api-credit"
+            target="_blank"
+            href="https://openweathermap.org/"
+            >OpenWeatherMap</a
+          >
+        </p>
+        <div class="copywrite-footer">
+          &copy; <span id="currentyear"></span> Temple Inn & Suites
         </div>
-        <div id="footer-extras">
-          <p><a class="location" target="_blank" href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977258,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">🏳️ Location Map</a></p>
-          <div id="lastModified"></div>
-          <p>⛅ api by <a class="api-credit" target="_blank" href="https://openweathermap.org/">OpenWeatherMap</a></p> 
-          <div class="copywrite-footer">
-            &copy; <span id="currentyear"></span> Temple Inn & Suites
-          </div>
-        </div>
+      </div>
     </footer>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

@@ -41,12 +41,12 @@ function displayTemples(temple) {
     
     //p address
     let address = document.createElement('p');
-    address.textContent = `${temple.address}`;
+    address.textContent = `Address: ${temple.address}`;
     card.appendChild(address);
     
     //p phone
     let phone = document.createElement('p');
-    phone.textContent = `${temple.phone}`;
+    phone.textContent = `Phone: ${temple.phone}`;
     card.appendChild(phone);
     
     //website
@@ -55,19 +55,16 @@ function displayTemples(temple) {
     card.appendChild(services);
 
     let history = document.createElement("p");
-    history.textContent = `${temple.history}`;
+    history.textContent = `Historic Dates: ${temple.history}`;
     card.appendChild(history);
 
     let schedules = document.createElement("p");
-    schedules.textContent = `${temple.schedules}`;
+    schedules.textContent = `Ordinance and Session Schedule: ${temple.schedules}`;
     card.appendChild(schedules);
 
-    // img
-    // let logo = document.createElement('img');
-    // logo.setAttribute("src", temple.logo);
-    // logo.setAttribute("alt", `${temple.name} Logo`);
-    // logo.setAttribute("loading", "lazy");
-    // card.appendChild(logo);
+    let closures = document.createElement("p");
+    closures.textContent = `Closure Dates: ${temple.closures}`;
+    card.appendChild(closures);
     
     cards.appendChild(card);
 }
@@ -96,7 +93,7 @@ function displayTemplesList(templeList) {
     tlist.appendChild(phone);
 
     //td website
-    let website = document.createElement("td");
+    let services = document.createElement("td");
     services.textContent = `${templeList.services}`;
     tlist.appendChild(services);
 

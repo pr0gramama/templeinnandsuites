@@ -62,11 +62,41 @@
     </section>
   </header>
     <main>
-
+      <div id="services-main">
+        <div id="services">
+          <h3>Hotel Services</h3>
+          <p>Service availability at each hotel varies.</p>
+          <p>Please <a href="contact.html">contact us</a> for hotel specific accommodations.</p>
+          <ul>
+            <li>Shuttle Service</li>
+            <li>Free Parking</li>
+            <li>Free Breakfast</li>
+            <li>Convenience Store</li>
+            <li>Dry Cleaning Service</li>
+            <li>Room Service</li>
+            <li>Wake Up Calls</li>
+            <li>Coin-operated Laundry</li>
+            <li>Wi-fi/Ethernet</li>
+            <li>Concierge</li>
+          </ul>
+        </div>
+        <div id="subpages">
+          <section id="missionaries">
+            <h4>Full-time Temple Missionaries</h4>
+            <p>Special services are available for full-time Temple Missionaries.</p>
+            <button onclick="window.location.href='missionary.html'">Missionary Services</button>
+          </section>
+          <section id="receptions">
+            <h4>Wedding Receptions</h4>
+            <p>Having a wedding?  See how we can help with our reception specialists.</p>
+            <button onclick="window.location.href='reception.html'">Reception Services</button>
+          </section>
+        </div>
+      </div>
     </main>
     <footer>
       <div id="logo-footer">
-        <a href="/index.html">
+        <a href="index.html">
           <picture id="small-logo">
             <img
               src="images/temple-logo.webp"
@@ -74,21 +104,36 @@
               width="100"
             />
           </picture>
-        </div>
         </a>
-        <div class="footer-title">
-          <p class="footer-name">Temple Inn & Suites</p>
-          <p class="footer-address">4800 Montgomery Ln #300</p>
-          <p class="footer-address">Bethesda, MD  20814</p>
+      </div>
+      <div class="footer-title">
+        <p class="footer-name">Temple Inn & Suites</p>
+        <p class="footer-address">4800 Montgomery Ln #300</p>
+        <p class="footer-address">Bethesda, MD 20814</p>
+      </div>
+      <div id="footer-extras">
+        <p>
+          <a
+            class="location"
+            target="_blank"
+            href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977258,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318"
+            >🏳️ Location Map</a
+          >
+        </p>
+        <div id="lastModified"></div>
+        <p>
+          ⛅ api by
+          <a
+            class="api-credit"
+            target="_blank"
+            href="https://openweathermap.org/"
+            >OpenWeatherMap</a
+          >
+        </p>
+        <div class="copywrite-footer">
+          &copy; <span id="currentyear"></span> Temple Inn & Suites
         </div>
-        <div id="footer-extras">
-          <p><a class="location" target="_blank" href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832559,-77.0977258,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">🏳️ Location Map</a></p>
-          <div id="lastModified"></div>
-          <p>⛅ api by <a class="api-credit" target="_blank" href="https://openweathermap.org/">OpenWeatherMap</a></p> 
-          <div class="copywrite-footer">
-            &copy; <span id="currentyear"></span> Temple Inn & Suites
-          </div>
-        </div>
+      </div>
     </footer>
     <script src="js/script.js"></script>
 </body>

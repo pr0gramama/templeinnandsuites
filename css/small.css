@@ -98,10 +98,6 @@ header h2 {
   width: 45px;
 }
 
-nav {
-  z-index: 9999;
-}
-
 nav button {
   margin: 0.2rem 3vw;
   background: transparent;
@@ -146,6 +142,7 @@ nav ul {
 
 nav ul.open {
   display: block;
+  z-index: 9999;
   /* position: absolute; */
 }
 
@@ -346,8 +343,7 @@ nav ul.open {
 }
 
 #templeis-info a {
-  color: var(--primary-color);
-  text-decoration: none;
+  color: blue;
 }
 
 #templeis-info a:hover {
@@ -373,9 +369,243 @@ nav ul.open {
 }
 
 /* -----------------------Temples Page------------------------- */
-main {
+#temples {
+  background-color: var(--primary-color);
+  color: white;
+  width: auto;
+  font-family: var(--paragraph-font);
+}
+
+#temples-title {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 16pt;
+  margin-bottom: 10px;
+}
+
+#view {
+  text-align: center;
+}
+
+#view button {
+  text-align: center;
+  background-color: rgba(60, 110, 113, 0.15);
+  cursor: pointer;
+  border: 5px solid var(--primary-color);
+  border-radius: 5px;
+  margin: 10px;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  color: #3c6e71;
+  margin: .5em;
+  align-items: center;
+}
+
+#view button:hover {
+  border: 8px solid var(--accent3-color);
+}
+
+#view button:focus {
+  border: 8px solid var(--accent3-color);
+}
+
+.temple-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 2em;
+}
+
+.temple-cards section {
+  background-color: #284b63;
+  color: white;
+  border: 5px solid black;
+  box-shadow: 4px 4px 6px gray;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.temple-list {
+  display: grid;
+}
+
+.temple-list table {
+  padding: 10px;
+}
+
+table:nth-child(odd) {
+  background-color: #284b63;
   color: white;
 }
+
+table:nth-child(even) {
+  background-color: #d9d9d9;
+}
+
+/* ---------------------------Reservations Page------------------------- */
+
+#reserve-main {
+  background-color: white;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 1rem;
+}
+
+form fieldset {
+  border: 3px solid var(--accent1-color);
+  border-radius: 5px;
+  padding: 0.5rem 2%;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 16pt;
+  max-width: 350px;
+  
+}
+
+form legend {
+  color: white;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--accent3-color);
+  border-radius: 6px;
+  box-shadow: grey 4px 4px 6px;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: var(--accent3-color);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+label {
+  font-family: var(--paragraph-font);
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(60, 110, 113, 0.15);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  font-size: 12pt;
+}
+
+form label span {
+  padding: 0 0.5rem;
+  border-radius: 8px;
+  color: var(--primary-color);
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: var(--accent3-color);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  margin: 1em;
+  width: 96%;
+  max-width: 20rem;
+  font-family: var(--heading-font);
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+form input.submitBtn:hover {
+  background-color: var(--secondary-color);
+  color: black;
+  cursor: pointer;
+}
+
+form label.top input:required {
+  border-left: var(--secondary-color) solid 8px;
+}
+
+/* ----------------------------Services Page---------------------------- */
+#services-main {
+  margin-right: 35px;
+  margin-left: 35px;
+  background-color: white;
+  padding: 2em;
+  min-width: 300px;
+  text-align: center;
+  font-size: 18pt;
+}
+
+#services, #subpages {
+  font-family: var(--paragraph-font);
+}
+
+#services p {
+  font-style: italic;
+}
+#services a {
+  color: blue;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+#services a:hover {
+  color: #ec9a17;
+}
+
+#services ul li {
+  list-style: none;;
+}
+
+#missionaries, #receptions {
+  background-color: #9ab05e;
+  padding: 1em;
+  margin: 15px;
+  text-align: center;
+}
+
+#subpages h4 {
+  /* background-color: #f2f2f2; */
+  font-family: var(--special-font);
+  font-size: 18pt;
+  font-weight: 400;
+  padding: .5em;
+  margin-top: -10px;
+}
+
+#subpages p {
+  margin-top: -35px;
+  margin-bottom: 15px;
+}
+
+#subpages button {
+  font-size: 15pt;
+  padding: .5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#subpages button:hover {
+  color: #fff;
+  background-color: #780000;
+}
+
 
 /* -----------------Footer----------------- */
 footer {

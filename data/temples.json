@@ -4,6 +4,7 @@
             "name": "Bountiful Utah Temple",
             "address": "640 S Bountiful Blvd, Bountiful UT 84010-1394, United States",
             "phone": "(1) 801-296-2100",
+            "email": "bountiful@lds.net",
             "services": [
                         "Clothing rental available ",
                         "No cafeteria available ",
@@ -15,7 +16,7 @@
                         "Groundbreaking 2 May 1992", 
                         "Dedicated 8 January 1995"
                     ],
-            "schedules": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+            "schedules": "Sessions available each hour M-F, 6am-8pm.",
             "closures": [
                         "Saturday, 2 April 2022",
                         "Monday, 4 April 2022 - Monday, 18 April 2022",
@@ -31,6 +32,7 @@
             "name": "Provo Utah Temple",
             "address": "2200 Temple Hill Dr, Provo UT 84604-1775, United States",
             "phone": "(1) 801-375-5775",
+            "email": "provo@lds.net",
             "services": [
                         "Clothing rental available",
                         "No cafeteria available",
@@ -42,7 +44,7 @@
                         "Groundbreaking 15 June 1969", 
                         "Dedicated 9 February 1972"
                     ],
-            "schedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+            "schedules": "Sessions available each hour M-F, 6am-8pm.",            
             "closures": [
                         "Saturday, 2 April 2022",
                         "Monday, 30 May 2022",
@@ -59,6 +61,7 @@
             "name": "Draper Utah Temple",
             "address": "14065 Canyon Vista Ln, Draper UT 84020-5626, United States",
             "phone": "(1) 801-576-4240",
+            "email": "draper@lds.net",
             "services": [
                         "Clothing rental available",
                         "No cafeteria available",
@@ -70,7 +73,7 @@
                         "Groundbreaking 5 August 2006", 
                         "Dedicated 20 March 2009"
                     ],
-            "schedules": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+            "schedules": "Sessions available each hour M-F, 6am-8pm.",
             "closures": [
                         "Saturday, 2 April 2022",
                         "Monday, 29 August 2022 - Monday, 12 September 2022",
@@ -85,6 +88,7 @@
             "name": "Buenos Aires Argentina Temple",
             "address": "Aut. Tte. Gral. Riccheri N° 4955, B1778DUA Ciudad Evita, Buenos Aires, Argentina",
             "phone": "(54) 11-4693-9700",
+            "email": "buenos.aires@lds.net",
             "services": [
                         "Clothing rental available",
                         "No cafeteria available",
@@ -97,7 +101,7 @@
                         "Dedicated 17 January 1986",
                         "Rededicated 9 September 2012"
                     ],
-            "schedules": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+            "schedules": "Sessions available each hour M-F, 6am-8pm.",            
             "closures": [
                         "Saturday, 2 April 2022 (Limited Operations)",
                         "Monday, 18 April 2022 - Monday, 2 May 2022",
