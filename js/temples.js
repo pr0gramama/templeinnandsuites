@@ -54,17 +54,27 @@ function displayTemples(temple) {
     services.textContent = `Services Available: ${temple.services}`;
     card.appendChild(services);
 
+    // history
     let history = document.createElement("p");
     history.textContent = `Historic Dates: ${temple.history}`;
     card.appendChild(history);
 
+    // schedule
     let schedules = document.createElement("p");
     schedules.textContent = `Ordinance and Session Schedule: ${temple.schedules}`;
     card.appendChild(schedules);
 
+    //closures
     let closures = document.createElement("p");
     closures.textContent = `Closure Dates: ${temple.closures}`;
     card.appendChild(closures);
+
+    //images
+    let image = document.createElement('img');
+    image.setAttribute("src", temple.image);
+    image.setAttribute("alt", `${temple.name} image`);
+    image.setAttribute("loading", "lazy");
+    card.appendChild(image);
     
     cards.appendChild(card);
 }
