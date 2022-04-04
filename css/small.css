@@ -370,15 +370,19 @@ nav ul.open {
 
 /* -----------------------Temples Page------------------------- */
 #temples {
-  background-color: var(--primary-color);
+  background-color: white;
   color: white;
   width: auto;
   font-family: var(--paragraph-font);
+  margin-right: 35px;
+  margin-left: 35px;
 }
 
 #temples-title {
+  color: black;
   text-align: center;
   font-family: var(--heading-font);
+  font-style: italic;
   font-size: 16pt;
   margin-bottom: 10px;
 }
@@ -410,6 +414,10 @@ svg {
 
 #view button:focus {
   border: 8px solid var(--accent3-color);
+}
+
+.temple-cards p {
+  margin-bottom: 10px;
 }
 
 .temple-cards {

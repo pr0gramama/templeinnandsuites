@@ -5,6 +5,7 @@
             "address": "640 S Bountiful Blvd, Bountiful UT 84010-1394, United States",
             "phone": "(1) 801-296-2100",
             "email": "bountiful@lds.net",
+            "image": "images/bountiful-small.webp",
             "services": [
                         "Clothing rental available ",
                         "No cafeteria available ",
@@ -33,6 +34,7 @@
             "address": "2200 Temple Hill Dr, Provo UT 84604-1775, United States",
             "phone": "(1) 801-375-5775",
             "email": "provo@lds.net",
+            "image": "images/provo-small.webp",
             "services": [
                         "Clothing rental available",
                         "No cafeteria available",
@@ -62,6 +64,7 @@
             "address": "14065 Canyon Vista Ln, Draper UT 84020-5626, United States",
             "phone": "(1) 801-576-4240",
             "email": "draper@lds.net",
+            "image": "images/draper-small.webp",
             "services": [
                         "Clothing rental available",
                         "No cafeteria available",
@@ -89,6 +92,7 @@
             "address": "Aut. Tte. Gral. Riccheri N° 4955, B1778DUA Ciudad Evita, Buenos Aires, Argentina",
             "phone": "(54) 11-4693-9700",
             "email": "buenos.aires@lds.net",
+            "image": "images/buenos-aires-small.webp",
             "services": [
                         "Clothing rental available",
                         "No cafeteria available",
