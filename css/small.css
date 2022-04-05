@@ -406,6 +406,7 @@ nav ul.open {
 }
 /* -----------------------Temples Page------------------------- */
 #temples {
+  justify-content: center;
   background-color: white;
   color: white;
   width: auto;
