@@ -65,6 +65,7 @@ footer {
   text-align: left;
   color: white;
   margin-right: 10px;
+  text-shadow: 4px 4px 6px black;
 }
 
 header h1 {
@@ -309,8 +310,11 @@ nav ul.open {
   background-color: var(--secondary-color);
   color: white;
   border: none;
+  border-radius: 9px;
   padding: 1em;
   margin-top: 20px;
+  text-shadow: 4px 4px 6px black;
+  box-shadow: 4px 4px 6px darkgray;
 }
 
 #reservations button:hover {
@@ -332,9 +336,12 @@ nav ul.open {
   background-color: var(--accent3-color);
   color: white;
   border: none;
+  border-radius: 8px;
   padding: 1em;
   margin-top: 30px;
   margin-bottom: 20px;
+  text-shadow: 4px 4px 6px black;
+  box-shadow: 4px 4px 6px darkgray;
 }
 
 #templeis-info button:hover {
@@ -783,6 +790,8 @@ footer {
   font-style: italic;
   font-weight: bold;
   margin-bottom: 4px;
+  text-align: center;
+  text-shadow: 4px 4px 6px black;
 }
 
 .footer-address {
@@ -791,6 +800,7 @@ footer {
   font-size: 1.8vw;
   font-weight: bold;
   text-align: center;
+  text-shadow: 4px 4px 6px black;
 }
 
 #footer-extras {
@@ -803,6 +813,7 @@ footer {
   font-family: var(--paragraph-font);
   font-size: 1.6vw;
   padding: 1em;
+  text-shadow: 4px 4px 6px black;
 }
 
 #footer-extras a {
