@@ -413,8 +413,7 @@ nav ul.open {
   font-family: var(--paragraph-font);
   margin-right: 35px;
   margin-left: 35px;
-  max-width: 1200px;
-  min-width: 375px;
+  max-width: 1440px;
   padding-top: 1em;
 }
 
@@ -429,6 +428,7 @@ nav ul.open {
   font-style: italic;
   font-size: 16pt;
   margin-bottom: 10px;
+  text-shadow: 4px 4px 6px grey;
 }
 
 .temple-cards section h2 {
@@ -462,6 +462,7 @@ nav ul.open {
   border: 5px solid var(--primary-color);
   border-radius: 5px;
   margin: 10px;
+  box-shadow: 4px 4px 6px grey;
 }
 
 svg {
@@ -486,7 +487,7 @@ svg {
 
 .temple-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   gap: 20px;
   padding: 2em;
 }
@@ -500,6 +501,7 @@ svg {
   padding: 10px;
   align-items: center;
   text-align: center;
+  min-width: 300px;
 }
 
 .temple-list {
