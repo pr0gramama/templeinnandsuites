@@ -94,6 +94,18 @@
         width: 80%;
     }
 
+    #logo-footer img {
+        width: 100%;
+    }
+
+    .footer-name {
+        font-size: 20pt;
+    }
+
+    .footer-address {
+        font-size: 14pt;
+    }
+
     /* ---------------------------Reservations Page------------------------- */
 
     #reserve-main {
