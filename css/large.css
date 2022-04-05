@@ -93,4 +93,32 @@
     #spotlight img {
         width: 80%;
     }
+
+    /* ---------------------------Reservations Page------------------------- */
+
+    #reserve-main {
+        display: flex;
+    }
+
+    form input.submitBtn {
+        justify-content: left;
+    }
+
+    /*------------Contact Us---------*/
+  .contact-grid {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .help-grid {
+    width: 50%;
+  }
+
+  .name-form {
+    width: 50%;
+  }
+
+  #map iframe {
+    height: 450px;
+  }
 }

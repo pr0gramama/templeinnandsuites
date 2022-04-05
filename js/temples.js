@@ -75,8 +75,30 @@ function displayTemples(temple) {
     image.setAttribute("alt", `${temple.name} image`);
     image.setAttribute("loading", "lazy");
     card.appendChild(image);
+
+    
+    let button = document.createElement('button');
+    button.innerText = '🤍 Favorite';
+    button.id = 'favButton';
+    let clicked = false;
+    button.addEventListener('click', () => {
+        localStorage.setItem('favorite', 'liked');
+        if (!clicked) {
+            clicked = true;
+            button.innerText = '❤️ Favorite';
+            alert('Favorite added.')
+        } else {
+            localStorage.removeItem('favorite', 'liked')
+            clicked = false;
+            button.innerText = '🤍 Favorite';
+            alert('Favorite removed.')
+        }
+    })
+
+    card.appendChild(button);
     
     cards.appendChild(card);
+
 }
 
 function removedisplayTemples () {
@@ -109,3 +131,5 @@ function displayTemplesList(templeList) {
 
     tempList.appendChild(tlist);
 }
+
+
