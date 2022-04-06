@@ -614,6 +614,8 @@ form label.top input:required {
   border-left: var(--secondary-color) solid 8px;
 }
 
+
+
 /* ----------------------------Services Page---------------------------- */
 #services-main {
   margin-right: 35px;
@@ -690,6 +692,35 @@ form label.top input:required {
 /* -------------------Missionary Sub-page --------------------- */
 #missionary-main {
   background-color: white;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 1em;
+  font-family: var(--paragraph-font);
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+#missionary-title h4 {
+  text-shadow: 4px 4px 6px grey;
+  font-weight: bolder;
+}
+
+.suites {
+  border: 5px solid var(--accent1-color);
+  box-shadow: 4px 4px 8px grey;
+  border-radius: 8px;
+  padding: 0 1em 1em;
+  margin-top: 1em;
+}
+
+.suites img {
+  width: 100%;
+}
+.suites p {
+  font-size: 10pt;
+  margin-top: -15px;
+  margin-bottom: 5px;
 }
 
 /* -------------------Receptions Sub-page --------------------- */
