@@ -434,19 +434,22 @@ nav ul.open {
 .temple-cards section h2 {
   font-style: italic;
 }
+#like img {
+  width: 25%;
+}
 
-#favButton {
+#like {
   font-weight: bolder;
-  font-size: 16pt;
   font-style: italic;
-  padding: 5px;
+  
   margin-top: 10px;
   background-color: white;
   border: 3px solid var(--accent1-color);
   border-radius: 8px;
   cursor: pointer;
 }
-#favButton:hover {
+
+#like:hover {
   background-color: #669BBC;
   border: 3px solid var(--secondary-color)
 }

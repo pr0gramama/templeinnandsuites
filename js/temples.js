@@ -76,26 +76,32 @@ function displayTemples(temple) {
     image.setAttribute("loading", "lazy");
     card.appendChild(image);
 
-    
-    let button = document.createElement('button');
-    button.innerText = '🤍 Favorite';
-    button.id = 'favButton';
-    let clicked = false;
-    button.addEventListener('click', () => {
-        localStorage.setItem('favorite', 'liked');
-        if (!clicked) {
-            clicked = true;
-            button.innerText = '❤️ Favorite';
-            alert('Favorite added.')
-        } else {
-            localStorage.removeItem('favorite', 'liked')
-            clicked = false;
-            button.innerText = '🤍 Favorite';
-            alert('Favorite removed.')
-        }
-    })
+    //button like
+    let favorite = document.createElement('button');
+    const heart = document.createElement('img');
+    heart.setAttribute('alt', 'Like button heart image');
 
-    card.appendChild(button);
+    favorite.appendChild(heart);
+    if(localStorage.getItem(temple.name) == "true") {
+        heart.src = "images/heart-red.svg";
+        }
+        else {
+            heart.src = "images/heart-black.svg";
+        }
+
+    favorite.setAttribute('id', 'like');
+    favorite.setAttribute('value', "like-btn");
+    favorite.addEventListener("click", () => {
+            if(localStorage.getItem(temple.name) == "true") {
+            localStorage.setItem(temple.name, "false");
+            heart.src = "images/heart-black.svg";
+        }
+        else {
+            localStorage.setItem(temple.name, "true");
+            heart.src = "images/heart-red.svg";
+        }
+    });
+    card.append(favorite);
     
     cards.appendChild(card);
 
