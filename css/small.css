@@ -487,9 +487,8 @@ svg {
 
 .temple-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 2em;
 }
 
 .temple-cards section {
@@ -501,7 +500,6 @@ svg {
   padding: 10px;
   align-items: center;
   text-align: center;
-  min-width: 300px;
 }
 
 .temple-list {
@@ -631,6 +629,13 @@ form label.top input:required {
   font-family: var(--paragraph-font);
 }
 
+#services {
+  border: 4px solid #9ab05e;
+}
+
+#services h3 {
+  text-shadow: 4px 4px 6px grey;
+}
 #services p {
   font-style: italic;
 }
@@ -655,16 +660,16 @@ form label.top input:required {
 }
 
 #subpages h4 {
-  /* background-color: #f2f2f2; */
   font-family: var(--special-font);
-  font-size: 18pt;
-  font-weight: 400;
+  font-size: 22pt;
+  font-weight: 600;
   padding: .5em;
   margin-top: -10px;
+  margin-bottom: 15px;
 }
 
 #subpages p {
-  margin-top: -35px;
+  margin-top: -30px;
   margin-bottom: 15px;
 }
 
@@ -674,11 +679,44 @@ form label.top input:required {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 4px 4px 6px black;
 }
 
 #subpages button:hover {
   color: #fff;
   background-color: #780000;
+}
+
+/* -------------------Missionary Sub-page --------------------- */
+#missionary-main {
+  background-color: white;
+}
+
+/* -------------------Receptions Sub-page --------------------- */
+#recep-main {
+  margin-left: 35px;
+  margin-right: 35px;
+  font-family: var(--paragraph-font);
+  background-color: rgb(7, 12, 24);
+  padding: 1em;
+}
+
+#gallery img {
+  width: 100%;
+}
+
+#gallery h3 {
+  text-align: center;
+  font-family: var(--special-font);
+  font-size: 18pt;
+  font-weight: 400;
+  margin-bottom: 3px;
+  color: white;
+}
+
+#gallery p {
+  margin-bottom: 10px;
+  color: white;
 }
 
 /* -------------------Contact Us Page --------------------- */
@@ -770,6 +808,20 @@ textarea {
   font-weight: bold;
   color: black;
   background-color: var(--secondary-color);
+}
+
+/* -------------------Thank You Sub-page --------------------- */
+#thankyou {
+  background-color: white;
+  padding: 2em;
+  margin-left: 35px;
+  margin-right: 35px;
+  text-align: center;
+}
+
+#thankyou p {
+  font-family: var(--paragraph-font);
+  font-size: 16pt;
 }
 
 /* -----------------Footer----------------- */

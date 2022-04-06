@@ -42,4 +42,9 @@
     display: flex;
   }
   
+
+  /* ------Temples Page---------- */
+  .temple-cards {
+    padding: 2em;
+  }
 }

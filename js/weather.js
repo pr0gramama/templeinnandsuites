@@ -16,8 +16,10 @@ fetch(apiURL)
     document.querySelector('figcaption').textContent = desc;
 
     document.querySelector('#humidity').textContent = jsObject.current.humidity;
-    document.querySelector('#alerts').textContent = jsObject.alerts[0].event;
     
+    if (jsObject.alerts) {
+        document.querySelector('#alerts').textContent = `Weather Alert: ${jsObject.alerts[0].event}`;
+    }
     });
 
 function capitalize(word) {
